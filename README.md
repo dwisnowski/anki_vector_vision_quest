@@ -151,13 +151,7 @@ Connect to Vector...
 2019-02-17 21:55:42,706 anki_vector.connection.Connection INFO     control_granted_response {
 }
 
-Show camera
-Say My lord, I found something interesting. Give me 5 seconds.
-Say Prepare to take a photo
-Say 3
-Say 2
-Say 1
-Say Cheers
+
 Save image
 Show image = /Workspace/labs/Anki-Vector-AI/resources/latest.jpg
 Display image on Vector's face...
