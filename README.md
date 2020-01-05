@@ -21,7 +21,7 @@ As of right now, this project will likely focus on Google cloud, but will likely
 # Object detection
 This program is to enable Vector to detect objects with its camera, and tell us what it found. 
 
-We take a photo from Vector's camera, then post to Google Vision Service, then Google Vision Service returns the object detection result, 
+We take a photo from Vector's camera, then post to [Google Vision Service](https://cloud.google.com/vision/docs/labels), then Google Vision Service returns the object detection result, 
 finally, we turn all the label text into a sentence and send to Vector so that Vector can say it out loud.
 
 ### Run the code yourself
