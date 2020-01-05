@@ -21,3 +21,7 @@ pids
 logs
 
 resources/latest.jpg
+venv/
+pyvenv.cfg
+bin/
+lib/
