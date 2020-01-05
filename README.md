@@ -26,11 +26,14 @@ finally, we turn all the label text into a sentence and send to Vector so that V
 
 ### Run the code yourself
 1. Install [Vector Python SDK](https://developer.anki.com/vector/docs/install-macos.html). You can test the SDK by running any of the example from [anki/vector-python-sdk/examples/tutorials/](https://github.com/anki/vector-python-sdk/tree/master/examples/tutorials) 
-2. Set up your Google Vision account. Then follow the [Quickstart](https://cloud.google.com/vision/docs/quickstart-client-libraries) to test the API.
-3. Clone this project to local. It requires Python 3.6+.
-4. Don forget to set Google Vision environment variable GOOGLE_APPLICATION_CREDENTIALS to the file path of the JSON file that contains your service account key.  e.g. `export GOOGLE_APPLICATION_CREDENTIALS="/Workspace/Vector-vision-62d48ad8da6e.json"`
-5. Make sure your computer and Vector in the same WiFi network. Then run `python3 object_detection.py`.
-6. If you are lucky, Vector will start the first object detection, it will say "My lord, I found something interesting. Give me 5 seconds."
+1. Set up your Google Vision account. Then follow the [Quickstart](https://cloud.google.com/vision/docs/quickstart-client-libraries) to test the API.
+1. Clone this project to local. It requires Python 3.6+.
+1. Change directory to this project in commandline.
+1. Create python virtual envirionment `python3 -m venv .`
+1. Install all dependencies for this project `pip3 install -r requirements.txt`
+1. Don forget to set Google Vision environment variable GOOGLE_APPLICATION_CREDENTIALS to the file path of the JSON file that contains your service account key.  e.g. `export GOOGLE_APPLICATION_CREDENTIALS="/Workspace/Vector-vision-62d48ad8da6e.json"`
+1. Make sure your computer and Vector in the same WiFi network. Then run `./object_detection.py`.
+1. Done
 
 ### How it works
 1. Connect to Vector with `enable_camera_feed=True`, because we need the [anki_vector.camera](https://developer.anki.com/vector/docs/generated/anki_vector.camera.html) API.
