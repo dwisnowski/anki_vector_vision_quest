@@ -75,6 +75,7 @@ def localize_objects(path):
 def connect_robot():
     print('Connect to Vector...')
     robot.connect()
+    robot.camera.init_camera_feed()
 
 
 def disconnect_robot():
