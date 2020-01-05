@@ -2,18 +2,20 @@
 
 # Table of contents
 - [Table of contents](#table-of-contents)
-- [Anki Vector AI++](#anki-vector-ai)
+- [Description](#description)
 - [Object detection](#object-detection)
     - [Run the code yourself](#run-the-code-yourself)
     - [How it works](#how-it-works)
-- [Shoes placed](#shoes-placed)
 
-# Anki Vector AI++
+# Description
 [Anki Vector](https://www.anki.com/en-us/vector) - The Home Robot With Interactive AI Technology.
 
-Well, I bought this little guy at 10 Feb 2019, if you want a robot pet, and you want to do some AI programming on it, then I highly recommend you to get Anki Vector.
+This project borrows from [# Anki Vector AI++](https://github.com/open-ai-robot/awesome-anki-vector).  I plan on expanding upon this and
+setting up a maze game where Vector will traverse a maze and gather info along his journey.  This information will be sent up to the cloud
+and upon completion of the maze, statistics about Vector's journey will be presented.  The focus will be on learning cloud technologies
+such as image recognition, nosql databases, and serverless compute.
 
-I build this project to share my codes and docs.
+As of right now, this project will likely focus on Google cloud, but will likely expand to AWS and Azure soon. 
 
 
 # Object detection
@@ -21,27 +23,6 @@ This program is to enable Vector to detect objects with its camera, and tell us 
 
 We take a photo from Vector's camera, then post to Google Vision Service, then Google Vision Service returns the object detection result, 
 finally, we turn all the label text into a sentence and send to Vector so that Vector can say it out loud.
-
-Here are some demo videos:
-
-1. Vector detected a watch on my desk.
-
-[![image1](https://user-images.githubusercontent.com/799578/52912513-5834bd00-32ed-11e9-82a8-8432cf50c3b6.png)](https://youtu.be/Zee8vcq2-Vc)
-
-2. Vector detected a bear on my phone’s album.
-
-[![image2](https://user-images.githubusercontent.com/799578/52912527-7dc1c680-32ed-11e9-8aaf-f2c16b29750b.png)](https://youtu.be/fjIAyzzA3FM)
-
-3. Vector detected a game controller on my desk.
-
-[![image3](https://user-images.githubusercontent.com/799578/52912537-9df18580-32ed-11e9-8ee5-a1b3db52298a.png)
-](https://youtu.be/fzhcvPQBTBY)
-
-4. Vector was exploring on my desk as usual and randomly tell me what it found. 
-
-[![image4](https://user-images.githubusercontent.com/799578/53691347-e5304980-3db6-11e9-8393-78ddd1233295.png)](https://youtu.be/7zd7-YOIkvc)
-
-Well, let's see how to do it.
 
 ### Run the code yourself
 1. Install [Vector Python SDK](https://developer.anki.com/vector/docs/install-macos.html). You can test the SDK by running any of the example from [anki/vector-python-sdk/examples/tutorials/](https://github.com/anki/vector-python-sdk/tree/master/examples/tutorials) 
@@ -205,19 +186,3 @@ Vector disconnected
 ```
 
 You can find the latest photo that Vector uses to detention in `resources/latest.jpg`.
-
-
-# Shoes placed
-This program is to enable Vector to place shoes for us. Vector will place our shoes when we're not at home, so we can leave home without worry about the shoes, especially when we're in a hurry.
-
-This program is in research. I'll share the plan, the design, the docs, the codes here. I highly recommend you make an issue on GitHub so we can talk about it further if you're interesting, any help is welcome!
-
-The design proposal is in this Google doc. https://docs.google.com/document/d/10TQEdbIdcvCW8gNAUvVVSe1YxzFxsQExP_X33M3_Aos/edit?usp=sharing
-
-![image](https://user-images.githubusercontent.com/799578/54486068-ce611b00-48bd-11e9-810e-f278f285005e.png)
-
-
-Here is a draft demo video I made to give you guys a sense of the program:
-
-[![image](https://user-images.githubusercontent.com/799578/54484263-bbd6e980-489d-11e9-97a5-aa6eaafe8b80.png)](https://youtu.be/Wj_TB6Mr8qA)
-
