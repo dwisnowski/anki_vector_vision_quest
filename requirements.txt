@@ -16,7 +16,7 @@ idna==2.8
 itsdangerous==1.1.0
 Jinja2==2.10.3
 MarkupSafe==1.1.1
-numpy==1.18.0
+numpy==1.22.0
 Pillow==7.0.0
 protobuf==3.11.2
 pyasn1==0.4.8
